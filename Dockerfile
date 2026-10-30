@@ -1,6 +1,6 @@
 FROM python:3.9-slim
-WORKDIR /activity4
+WORKDIR /app
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
-COPY . /activity4
-RUN chmod +x /activity4/.github/scripts/entrypoint.sh
-ENTRYPOINT  ["/activity4/.github/scripts/entrypoint.sh"]
+COPY . /app
+RUN chmod +x /app/.github/scripts/entrypoint.sh
+ENTRYPOINT  ["/app/.github/scripts/entrypoint.sh"]
