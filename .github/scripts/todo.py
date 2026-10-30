@@ -62,6 +62,6 @@ def main():
   for title in completed_titles:
     print(title)
 
-  if __name__ == "__main__":
-    main()
+if __name__ == "__main__":
+  main()
     
